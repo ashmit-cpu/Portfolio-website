@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+   margin: 0;
+   text-decoration: none;
+   scroll-behavior: smooth;
+}
+
+.header-bg {
+   position: fixed;
+   width: 100%;
+   z-index: 2;
+   font-family: 'Ubuntu', sans-serif;
+   transition: all 0.6s ease;
+   
+
+}
+
+
+.header-bg .max-width {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+
+
+a.nav-link.text-white:hover {
+   color: rgb(192, 191, 191) !important;
+   transition: color 0.4s;
+
+}
+
+
+
+/* home section styling */
+.home {
+   display: flex;
+   background: url("../img/background-image.jpg");
+   display: cover;
+   background-size: cover;
+   height: 120vmin;
+
+   color: #fff;
+   font-family: 'Ubuntu', sans-serif;
+   background-repeat: no-repeat;
+   background-position: center;
+
+}
+
+.home .max-width {
+   margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+   font-size: 2vw;
+
+
+}
+
+.home .home-content .text-2 {
+   font-size: 6vw;
+   font-weight: 600;
+   margin-left: -3px;
+
+}
+
+.home .home-content .text-3 {
+   font-size: 3vw;
+   margin: 5px 0;
+
+
+}
+
+.home .home-content .text-3 span {
+   color: crimson;
+   font-weight: 500;
+
+
+}
+
+
+/* about section styling */
+
+
+.about {
+   padding: 100px 0;
+   background-color: gainsboro;
+}
+
+.about {
+   font-family: 'Poppins', sans-serif;
+}
+
+.about .title {
+   font-family: 'Ubuntu', sans-serif;
+   text-align: center;
+   font-size: 40px;
+
+
+}
+
+.about .container .left-col img {
+   width: 50%;
+   height: auto;
+   object-fit: cover;
+}
+
+/* .about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50);
+
+}
+ */
+.about .about-content {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+
+.about .container .right-col .text {
+   font-size: 2vw;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+.about .container .left-col {
+   width: 45%;
+}
+
+
+.about .container .right-col {
+   width: 55%;
+   padding-top: 7%;
+
+
+}
+
+.about .container .right-col .text span {
+   color: crimson;
+}
+
+.about .container .right-col p {
+   text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+/* passion styling */
+
+.passion {
+   background-color: #111;
+   padding-bottom: 10%;
+}
+
+
+
+.passion .row .card {
+   background-color: #222;
+   color: gainsboro;
+   height: 97%;
+   font-size: 15px;
+   border-radius: 7px;
+
+}
+
+.passion .title {
+   color: gainsboro;
+   font-family: 'Ubuntu', sans-serif;
+   text-align: center;
+   font-size: 40px;
+   padding: 7%;
+}
+
+.passion .card-title {
+   text-align: center;
+}
+
+.passion .row #icon {
+   text-align: center;
+   color: red;
+   font-size: 60px;
+   padding-top: 7%;
+   padding-bottom: 5%;
+   transition: all 0.3s ease;
+
+}
+
+.passion .row .card:hover {
+   background-color: crimson;
+   transition-duration: 0.5s;
+}
+
+.passion .row .card .card-body {
+   transition: all 0.3s ease;
+}
+
+.passion .row .card:hover .card-body {
+   transform: scale(1.05);
+}
+
+.passion .row .card:hover #icon {
+   color: gainsboro;
+   transform: scale(1.08);
+
+}
+
+/* .about-me-visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  } */
+
+
+
+.contact .get-in-touch {
+   font-size: 90px;
+   text-align: center;
+   padding-top: 10%;
+   background-color: gainsboro;
+   padding-bottom: 5%;
+}
+
+.contact .send-me {
+   font-size: 24px;
+   background-color: rgb(114, 114, 114);
+   padding: 9px;
+   font-family: 'Ubuntu', sans-serif;
+   text-decoration: none;
+   color:whitesmoke;
+   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
+   transition: transform 0.2s ease-in-out;
+   display: inline-block;
+
+
+}
+
+.contact .send-me:hover {
+   display: inline-block;
+   transform: translateY(-1.7px);
+   background-color: rgb(85, 85, 85);
+}
+
+.footer{
+   padding-top: 60px;
+   padding-bottom: 18px;
+   background-color: #111;
+   text-align: center;
+   color: gainsboro;
+   font-size: 16px;
+}
+
+.social-media{
+   font-size: 35px;
+   padding: 15px;
+   text-decoration: none;
+   color: gainsboro;
+}
+.social-media:hover{
+   color: rgb(151, 151, 151);
+
+}  
+
+   @media all and (max-width: 576px) {
+      .home .home-content .text-1{
+         font-size: 5vw;
+      }
+      .home .home-content .text-2{
+         font-size: 9vw;
+      }
+      .home .home-content .text-3{
+         font-size: 5vw;
+      }
+      .about .container .text{
+         font-size: 5vw;
+      }
+      .about .container .right-col .text{
+         font-size: 4vw;
+      }
+      .contact .get-in-touch {
+         font-size: 45px;
+         padding-bottom: 15%;
+         padding-top: 30%;
+      }
+      .contact .get-in-touch h2{
+         font-size: 25px;
+      }
+      .contact .send-me{
+         font-size: 20px;
+
+      }
+      .footer{
+         padding-top: 7%;
+         
+      }
+      .social-media{
+         font-size: 20px;
+      }
+      
+    }
