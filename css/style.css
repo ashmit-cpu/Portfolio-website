@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 
+
 * {
    margin: 0;
    text-decoration: none;
    scroll-behavior: smooth;
 }
+body,html{
+   overflow-x: hidden;
+}
 
 .header-bg {
    position: fixed;
    width: 100%;
-   z-index: 2;
+   z-index: 99;
    font-family: 'Ubuntu', sans-serif;
    transition: all 0.6s ease;
-   
+
 
 }
 
@@ -241,7 +245,7 @@ a.nav-link.text-white:hover {
    padding: 9px;
    font-family: 'Ubuntu', sans-serif;
    text-decoration: none;
-   color:whitesmoke;
+   color: whitesmoke;
    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
    transition: transform 0.2s ease-in-out;
    display: inline-block;
@@ -255,7 +259,7 @@ a.nav-link.text-white:hover {
    background-color: rgb(85, 85, 85);
 }
 
-.footer{
+.footer {
    padding-top: 60px;
    padding-bottom: 18px;
    background-color: #111;
@@ -264,51 +268,206 @@ a.nav-link.text-white:hover {
    font-size: 16px;
 }
 
-.social-media{
+.social-media {
    font-size: 35px;
    padding: 15px;
    text-decoration: none;
    color: gainsboro;
 }
-.social-media:hover{
+
+.social-media:hover {
    color: rgb(151, 151, 151);
 
-}  
+}
 
-   @media all and (max-width: 576px) {
-      .home .home-content .text-1{
-         font-size: 5vw;
-      }
-      .home .home-content .text-2{
-         font-size: 9vw;
-      }
-      .home .home-content .text-3{
-         font-size: 5vw;
-      }
-      .about .container .text{
-         font-size: 5vw;
-      }
-      .about .container .right-col .text{
-         font-size: 4vw;
-      }
-      .contact .get-in-touch {
-         font-size: 45px;
-         padding-bottom: 15%;
-         padding-top: 30%;
-      }
-      .contact .get-in-touch h2{
-         font-size: 25px;
-      }
-      .contact .send-me{
-         font-size: 20px;
 
-      }
-      .footer{
-         padding-top: 7%;
-         
-      }
-      .social-media{
-         font-size: 20px;
-      }
+/* skills section styling  */
+
+.skills {
+   background-color: gainsboro;
+   padding-top: 80px;
+   padding-bottom: 80px;
+}
+
+.skills h2 {
+   text-align: center;
+   padding-bottom: 80px;
+   font-size: 40px;
+   font-family: 'Ubuntu', sans-serif;
+   font-weight: 700;
+
+
+}
+
+.skills .row {
+   padding-bottom: 50px;
+}
+
+.skills .row .skill-icon img {
+   width: 80px;
+   height: auto;
+
+}
+
+.skills .row .skill-icon .bootstrap.skill-img {
+   width: 140px;
+   height: auto;
+}
+
+.skills .row.secnd .skill-icon img {
+   width: 100px;
+   height: auto;
+}
+
+.skills .row {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+
+}
+
+/* skill icon styling */
+.skills .row .skill-icon .skill-img {
+   transition: all 0.3s;
+
+}
+
+.skills .row .skill-icon .skill-img:hover {
+   cursor: pointer;
+   transform: scale(1.026);
+   transition: all 0.3s;
+}
+
+/* giving skill icons drop shadow effect */
+
+.skills .row .skill-icon .html5.skill-img:hover {
+   filter: drop-shadow(-5px 20px 26px #EA8933);
+
+}
+
+.skills .row .skill-icon .css.skill-img:hover {
+   filter: drop-shadow(-5px 20px 26px #6972e9);
+
+}
+
+.skills .row .skill-icon .js.skill-img:hover {
+   filter: drop-shadow(-5px 20px 26px #eab933);
+
+}
+
+.skills .row .skill-icon .bootstrap.skill-img:hover {
+   filter: drop-shadow(-5px 20px 26px #9f3fec);
+
+}
+
+.skills .row .skill-icon .github.skill-img:hover {
+   filter: drop-shadow(-5px 20px 26px #707070);
+
+}
+
+.skills .row .skill-icon .jquery.skill-img:hover {
+   filter: drop-shadow(-5px 20px 26px #3142da);
+
+}
+
+.skills .row .skill-icon .react.skill-img:hover {
+   filter: drop-shadow(-5px 20px 26px #3fb5ec);
+
+}
+
+.skills .row .skill-icon .sass.skill-img:hover {
+   filter: drop-shadow(-5px 20px 26px #ec3fb8);
+
+}
+
+/* tooltip box styling */
+
+.tippy-box {
+   margin-bottom: 25px;
+   -webkit-box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.75);
+   box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.75);
+
+}
+
+
+.projects {
+   background-color: #111;
+}
+
+
+@media all and (max-width: 576px) {
+
+   .home .max-width {
+      margin: auto 0 auto 20px;
+   }
+   .home .home-content .text-1 {
+      font-size: 5vw;
+   }
+
+   .home .home-content .text-2 {
+      font-size: 9vw;
+   }
+
+   .home .home-content .text-3 {
+      font-size: 5vw;
+   }
+
+   .about .container .text {
+      font-size: 5vw;
+   }
+
+   .about .container .right-col .text {
+      font-size: 4vw;
+   }
+
+   .contact .get-in-touch {
+      font-size: 45px;
+      padding-bottom: 15%;
+      padding-top: 30%;
+   }
+
+   .contact .get-in-touch h2 {
+      font-size: 25px;
+   }
+
+   .contact .send-me {
+      font-size: 20px;
+
+   }
+
+   .footer {
+      padding-top: 7%;
+
+   }
+
+   .social-media {
+      font-size: 20px;
+   }
+
+
+   /* skills section styling  */
+
+   /* .skills .container {
+      padding: 10px;
       
-    }
+
+   } */
+
+   .skills .row .skill-icon img {
+      width: 50px;
+      height: auto;
+
+   }
+
+   .skills .row .skill-icon .bootstrap.skill-img {
+      width: 80px;
+      height: auto;
+   }
+
+   .skills .row.secnd .skill-icon img {
+      width: 55px;
+      height: auto;
+   }
+
+}
