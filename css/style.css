@@ -6,7 +6,9 @@
    text-decoration: none;
    scroll-behavior: smooth;
 }
-body,html{
+
+body,
+html {
    overflow-x: hidden;
 }
 
@@ -16,6 +18,7 @@ body,html{
    z-index: 99;
    font-family: 'Ubuntu', sans-serif;
    transition: all 0.6s ease;
+   
 
 
 }
@@ -169,7 +172,7 @@ a.nav-link.text-white:hover {
 
 .passion {
    background-color: #111;
-   padding-bottom: 10%;
+   padding-bottom: 120px;
 }
 
 
@@ -180,6 +183,8 @@ a.nav-link.text-white:hover {
    height: 97%;
    font-size: 15px;
    border-radius: 7px;
+   transition: all 0.5s ease-in;
+
 
 }
 
@@ -188,7 +193,8 @@ a.nav-link.text-white:hover {
    font-family: 'Ubuntu', sans-serif;
    text-align: center;
    font-size: 40px;
-   padding: 7%;
+   padding-top: 90px;
+   padding-bottom: 60px;
 }
 
 .passion .card-title {
@@ -201,13 +207,18 @@ a.nav-link.text-white:hover {
    font-size: 60px;
    padding-top: 7%;
    padding-bottom: 5%;
-   transition: all 0.3s ease;
+   transition: all 0.3s ease-in;
 
 }
 
+
 .passion .row .card:hover {
    background-color: crimson;
-   transition-duration: 0.5s;
+   cursor: pointer;
+   transition: all 0.5s ease;
+
+
+
 }
 
 .passion .row .card .card-body {
@@ -393,7 +404,110 @@ a.nav-link.text-white:hover {
 
 .projects {
    background-color: #111;
+   padding-bottom: 100px;
+   padding-top: 36px;
+   color: white;
 }
+
+.projects .container{
+   padding-top: 50px;
+}
+
+.projects h2 {
+   color: gainsboro;
+   text-align: center;
+   padding: 40px;
+}
+
+.projects .row {
+   display: flex;
+   justify-content: space-around;
+   gap: 20px;
+}
+
+.projects .row .card {
+   background-color: #222;
+   border-radius: 6px;
+   padding: 3px 8px;
+   width: 300px;
+   height: 320px;
+   cursor: pointer;
+   transition: all 0.5s;
+
+}
+
+.projects .row .card:hover {
+   transform: translateY(-2%);
+   transition: all 0.3s;
+   -webkit-box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
+box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
+
+}
+
+/* giving hover effect on card title */
+.projects .row .card:hover .card-title {
+   color: rgb(255, 35, 79);
+   transition: all 0.5s;
+}
+
+.projects .row .card .card-title {
+   font-weight: 600;
+   font-size: 24px;
+   text-decoration: none;
+   color: white;
+}
+
+.projects .row .card .card-text {
+   padding-top: 14px!important;
+
+   font-weight: 400;
+   font-size: 13px;
+   color: rgb(136, 136, 136);
+   line-height: 1.3;
+   text-align: justify;
+}
+
+.projects .row .card .icons {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 35px;
+}
+
+.projects .row .card .icons i {
+   font-size: 33px;
+   color: gainsboro;
+}
+
+.projects .row .card .icons .github i{
+   color: gainsboro;
+   display: inline-block;
+}
+
+.projects .row .card .icons .github i:hover{
+   color: rgb(255, 43, 85);
+   transition: all 0.4s;
+}
+
+.projects .row .card .skill {
+   display: flex;
+   justify-content: flex-start;
+   position: absolute;
+   bottom: 5px;
+
+}
+
+.projects .row .card .skill p {
+   padding-right: 24px;
+   font-family: "Gill Sans", sans-serif;
+   font-weight: 300;
+   color: gainsboro;
+   font-size: 14px;
+}
+
+
+
+
 
 
 @media all and (max-width: 576px) {
@@ -401,6 +515,7 @@ a.nav-link.text-white:hover {
    .home .max-width {
       margin: auto 0 auto 20px;
    }
+
    .home .home-content .text-1 {
       font-size: 5vw;
    }
@@ -446,27 +561,20 @@ a.nav-link.text-white:hover {
    }
 
 
-   /* skills section styling  */
-
-   /* .skills .container {
-      padding: 10px;
-      
-
-   } */
 
    .skills .row .skill-icon img {
-      width: 50px;
+      width: 56px;
       height: auto;
 
    }
 
    .skills .row .skill-icon .bootstrap.skill-img {
-      width: 80px;
+      width: 86px;
       height: auto;
    }
 
    .skills .row.secnd .skill-icon img {
-      width: 55px;
+      width: 63px;
       height: auto;
    }
 

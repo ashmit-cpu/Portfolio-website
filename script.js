@@ -1,7 +1,7 @@
 
 $(window).scroll(function() {
     if ($(window).scrollTop() >= 80) {
-      $('.header-bg').css('background', 'crimson');
+      $('.header-bg').css('background', '#780B21');
     } else {
       $('.header-bg').css('background', 'transparent');
     }
