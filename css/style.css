@@ -240,59 +240,6 @@ a.nav-link.text-white:hover {
     transition: opacity 0.5s ease-in-out;
   } */
 
-
-
-.contact .get-in-touch {
-   font-size: 90px;
-   text-align: center;
-   padding-top: 10%;
-   background-color: gainsboro;
-   padding-bottom: 5%;
-}
-
-.contact .send-me {
-   font-size: 24px;
-   background-color: rgb(114, 114, 114);
-   padding: 9px;
-   font-family: 'Ubuntu', sans-serif;
-   text-decoration: none;
-   color: whitesmoke;
-   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
-   transition: transform 0.2s ease-in-out;
-   display: inline-block;
-   border-radius: 5px;
-
-
-}
-
-.contact .send-me:hover {
-   display: inline-block;
-   transform: translateY(-1.7px);
-   background-color: rgb(85, 85, 85);
-}
-
-.footer {
-   padding-top: 60px;
-   padding-bottom: 18px;
-   background-color: #111;
-   text-align: center;
-   color: gainsboro;
-   font-size: 16px;
-}
-
-.social-media {
-   font-size: 35px;
-   padding: 15px;
-   text-decoration: none;
-   color: gainsboro;
-}
-
-.social-media:hover {
-   color: rgb(151, 151, 151);
-
-}
-
-
 /* skills section styling  */
 
 .skills {
@@ -459,6 +406,11 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
    color: white;
 }
 
+.projects .row .card .card-title:hover{
+   text-decoration: underline;
+
+}
+
 .projects .row .card .card-text {
    padding-top: 14px!important;
 
@@ -490,6 +442,7 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
    transition: all 0.4s;
 }
 
+
 .projects .row .card .skill {
    display: flex;
    justify-content: flex-start;
@@ -518,7 +471,8 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
    padding: 13px;
    font-family: 'Ubuntu', sans-serif;
    text-decoration: none;
-   color: whitesmoke;
+   color: white;
+   text-shadow: 1px 4px 5px rgba(0,0,0,0.6);
    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
    transition: transform 0.2s ease-in-out;
    display: inline-block;
@@ -526,8 +480,9 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
 
 }
 .projects .github-btn i{
-   font-size: 24px;
-   padding-right: 10px;
+   font-size: 26px;
+   padding-right: 12px;
+   color: #000000;
 }
 
 .projects .github-btn a:hover {
@@ -540,8 +495,68 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
 
 
 
+.contact .get-in-touch {
+   font-size: 90px;
+   text-align: center;
+   padding-top: 10%;
+   background-color: gainsboro;
+   padding-bottom: 5%;
+}
+
+.contact .send-me {
+   font-size: 24px;
+   background-color: rgb(114, 114, 114);
+   padding: 9px;
+   font-family: 'Ubuntu', sans-serif;
+   text-decoration: none;
+   color: whitesmoke;
+
+   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
+   transition: transform 0.2s ease-in-out;
+   display: inline-block;
+   border-radius: 5px;
+
+
+}
+
+.contact .send-me:hover {
+   display: inline-block;
+   transform: translateY(-1.7px);
+   background-color: rgb(85, 85, 85);
+   text-shadow: 1px 4px 5px rgba(0,0,0,0.6);
+
+}
+
+.footer {
+   padding-top: 60px;
+   padding-bottom: 18px;
+   background-color: #111;
+   text-align: center;
+   color: gainsboro;
+   font-size: 16px;
+}
+
+.social-media {
+   font-size: 26px;
+   padding: 15px;
+   text-decoration: none;
+   color: gainsboro;
+}
+
+.social-media:hover {
+   color: rgb(151, 151, 151);
+
+}
+
+
+
+
 
 @media all and (max-width: 576px) {
+   .header-bg h2{
+      font-size: 26px;
+
+   }
 
    .home .max-width {
       margin: auto 0 auto 20px;
@@ -609,4 +624,33 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
       height: auto;
    }
 
+
+
+
+   
+   
+   .projects .github-btn a{
+      font-size: 16px;
+      background-color: rgb(114, 114, 114);
+      padding: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      color: rgb(221, 221, 221);
+      box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease-in-out;
+      display: inline-block;
+      border-radius: 5px;
+   
+   }
+   .projects .github-btn i{
+      font-size: 22px;
+      padding-right: 12px;
+      color: #000000;
+   }
+   
+   .projects .github-btn a:hover {
+      display: inline-block;
+      transform: translateY(-2.4px);
+      background-color: rgb(85, 85, 85);
+   }
 }
