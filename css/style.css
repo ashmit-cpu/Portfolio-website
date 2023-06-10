@@ -12,13 +12,131 @@ html {
    overflow-x: hidden;
 }
 
+/* for customized scrollbar */
+body {
+   overflow: auto;
+   scrollbar-width: thin;
+   /* For Firefox */
+   scrollbar-color: transparent transparent;
+   /* For Chrome, Edge, and Safari */
+ }
+ 
+ /* For Chrome, Edge, and Safari */
+ body::-webkit-scrollbar {
+   width: 3px;
+ }
+ 
+ body::-webkit-scrollbar-thumb {
+   background-color: #888;
+   border-radius: 3px;
+ }
+ 
+ body::-webkit-scrollbar-track {
+   background: rgb(19, 19, 19);
+ 
+ }
+ 
+
+/* preloader styling */
+#preloader {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #000000;
+   z-index: 9999;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+
+}
+#preloader.fade-out {
+   opacity: 0;
+ }
+
+.lds-grid {
+   display: inline-block;
+   position: relative;
+   width: 80px;
+   height: 80px;
+ }
+ .lds-grid div {
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   background: crimson;
+   animation: lds-grid 1.2s linear infinite;
+ }
+ .lds-grid div:nth-child(1) {
+   top: 8px;
+   left: 8px;
+   animation-delay: 0s;
+ }
+ .lds-grid div:nth-child(2) {
+   top: 8px;
+   left: 32px;
+   animation-delay: -0.4s;
+ }
+ .lds-grid div:nth-child(3) {
+   top: 8px;
+   left: 56px;
+   animation-delay: -0.8s;
+ }
+ .lds-grid div:nth-child(4) {
+   top: 32px;
+   left: 8px;
+   animation-delay: -0.4s;
+ }
+ .lds-grid div:nth-child(5) {
+   top: 32px;
+   left: 32px;
+   animation-delay: -0.8s;
+ }
+ .lds-grid div:nth-child(6) {
+   top: 32px;
+   left: 56px;
+   animation-delay: -1.2s;
+ }
+ .lds-grid div:nth-child(7) {
+   top: 56px;
+   left: 8px;
+   animation-delay: -0.8s;
+ }
+ .lds-grid div:nth-child(8) {
+   top: 56px;
+   left: 32px;
+   animation-delay: -1.2s;
+ }
+ .lds-grid div:nth-child(9) {
+   top: 56px;
+   left: 56px;
+   animation-delay: -1.6s;
+ }
+ @keyframes lds-grid {
+   0%, 100% {
+     opacity: 1;
+   }
+   50% {
+     opacity: 0.5;
+   }
+ }
+ 
+
+html, body {
+   overflow: hidden;
+}
+
 .header-bg {
    position: fixed;
    width: 100%;
    z-index: 99;
    font-family: 'Ubuntu', sans-serif;
    transition: all 0.6s ease;
-   
+
 
 
 }
@@ -357,7 +475,7 @@ a.nav-link.text-white:hover {
    color: white;
 }
 
-.projects .container{
+.projects .container {
    padding-top: 50px;
 }
 
@@ -387,9 +505,9 @@ a.nav-link.text-white:hover {
 .projects .row .card:hover {
    transform: translateY(-2%);
    transition: all 0.3s;
-   -webkit-box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
--moz-box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
-box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 0px 25px 16px -20px rgba(0, 0, 0, 0.75);
+   -moz-box-shadow: 0px 25px 16px -20px rgba(0, 0, 0, 0.75);
+   box-shadow: 0px 25px 16px -20px rgba(0, 0, 0, 0.75);
 
 }
 
@@ -406,13 +524,13 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
    color: white;
 }
 
-.projects .row .card .card-title:hover{
+.projects .row .card .card-title:hover {
    text-decoration: underline;
 
 }
 
 .projects .row .card .card-text {
-   padding-top: 14px!important;
+   padding-top: 14px !important;
 
    font-weight: 400;
    font-size: 13px;
@@ -432,12 +550,12 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
    color: gainsboro;
 }
 
-.projects .row .card .icons .github i{
+.projects .row .card .icons .github i {
    color: gainsboro;
    display: inline-block;
 }
 
-.projects .row .card .icons .github i:hover{
+.projects .row .card .icons .github i:hover {
    color: rgb(255, 43, 85);
    transition: all 0.4s;
 }
@@ -459,27 +577,28 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
    font-size: 14px;
 }
 
-.projects .github-btn{
+.projects .github-btn {
    padding-top: 90px;
    display: flex;
    justify-content: center;
 }
 
-.projects .github-btn a{
+.projects .github-btn a {
    font-size: 20px;
    background-color: rgb(114, 114, 114);
    padding: 13px;
    font-family: 'Ubuntu', sans-serif;
    text-decoration: none;
    color: white;
-   text-shadow: 1px 4px 5px rgba(0,0,0,0.6);
+   text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.6);
    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
    transition: transform 0.2s ease-in-out;
    display: inline-block;
    border-radius: 5px;
 
 }
-.projects .github-btn i{
+
+.projects .github-btn i {
    font-size: 26px;
    padding-right: 12px;
    color: #000000;
@@ -523,7 +642,7 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
    display: inline-block;
    transform: translateY(-1.7px);
    background-color: rgb(85, 85, 85);
-   text-shadow: 1px 4px 5px rgba(0,0,0,0.6);
+   text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.6);
 
 }
 
@@ -552,8 +671,9 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
 
 
 
+
 @media all and (max-width: 576px) {
-   .header-bg h2{
+   .header-bg h2 {
       font-size: 26px;
 
    }
@@ -627,9 +747,9 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
 
 
 
-   
-   
-   .projects .github-btn a{
+
+
+   .projects .github-btn a {
       font-size: 16px;
       background-color: rgb(114, 114, 114);
       padding: 10px;
@@ -640,14 +760,15 @@ box-shadow: 0px 25px 16px -20px rgba(0,0,0,0.75);
       transition: transform 0.2s ease-in-out;
       display: inline-block;
       border-radius: 5px;
-   
+
    }
-   .projects .github-btn i{
+
+   .projects .github-btn i {
       font-size: 22px;
       padding-right: 12px;
       color: #000000;
    }
-   
+
    .projects .github-btn a:hover {
       display: inline-block;
       transform: translateY(-2.4px);

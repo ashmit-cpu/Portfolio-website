@@ -1,20 +1,45 @@
 
-$(window).scroll(function() {
-    if ($(window).scrollTop() >= 80) {
-      $('.header-bg').css('background', '#780B21');
-    } else {
-      $('.header-bg').css('background', 'transparent');
-    }
-  });
+$(window).scroll(function () {
+  if ($(window).scrollTop() >= 80) {
+    $('.header-bg').css('background', '#780B21');
+  } else {
+    $('.header-bg').css('background', 'transparent');
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Disable scrolling on page load
+  document.documentElement.style.overflow = 'hidden';
+  window.scrollTo(0, 0);
+
+
+  // Enable scrolling after 4 seconds
+  setTimeout(function () {
+      document.documentElement.style.overflow = 'auto';
+  }, 2000);
+});
 
 
 
-    // typing animation
-var typed = new Typed(".typing",{
-    strings:["Ashmit k"],
-    typeSpeed:100,
-    backSpeed:60,
-    loop:true
+
+
+window.addEventListener("load",function(){
+  setTimeout(function () {
+    const preloader = document.getElementById("preloader");
+    preloader.style.display = "none";
+
+    
+}, 2000);
+})
+
+
+
+// typing animation
+var typed = new Typed(".typing", {
+  strings: ["Ashmit k"],
+  typeSpeed: 100,
+  backSpeed: 60,
+  loop: true
 });
 
 // tooltips
