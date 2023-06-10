@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Enable scrolling after 4 seconds
   setTimeout(function () {
       document.documentElement.style.overflow = 'auto';
-  }, 2000);
+  }, 1500);
 });
 
 
@@ -29,7 +29,7 @@ window.addEventListener("load",function(){
     preloader.style.display = "none";
 
     
-}, 2000);
+}, 1500);
 })
 
 
