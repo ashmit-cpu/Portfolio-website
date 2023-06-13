@@ -19,23 +19,23 @@ body {
    /* For Firefox */
    scrollbar-color: transparent transparent;
    /* For Chrome, Edge, and Safari */
- }
- 
- /* For Chrome, Edge, and Safari */
- body::-webkit-scrollbar {
+}
+
+/* For Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
    width: 3px;
- }
- 
- body::-webkit-scrollbar-thumb {
+}
+
+body::-webkit-scrollbar-thumb {
    background-color: #888;
    border-radius: 3px;
- }
- 
- body::-webkit-scrollbar-track {
+}
+
+body::-webkit-scrollbar-track {
    background: rgb(19, 19, 19);
- 
- }
- 
+
+}
+
 
 /* preloader styling */
 #preloader {
@@ -50,83 +50,99 @@ body {
    justify-content: center;
    align-items: center;
    opacity: 1;
-  transition: opacity 0.5s ease-in-out;
+   transition: opacity 0.5s ease-in-out;
 
 }
+
 #preloader.fade-out {
    opacity: 0;
- }
+}
 
 .lds-grid {
    display: inline-block;
    position: relative;
    width: 80px;
    height: 80px;
- }
- .lds-grid div {
+}
+
+.lds-grid div {
    position: absolute;
    width: 16px;
    height: 16px;
    border-radius: 50%;
    background: crimson;
    animation: lds-grid 1.2s linear infinite;
- }
- .lds-grid div:nth-child(1) {
+}
+
+.lds-grid div:nth-child(1) {
    top: 8px;
    left: 8px;
    animation-delay: 0s;
- }
- .lds-grid div:nth-child(2) {
+}
+
+.lds-grid div:nth-child(2) {
    top: 8px;
    left: 32px;
    animation-delay: -0.4s;
- }
- .lds-grid div:nth-child(3) {
+}
+
+.lds-grid div:nth-child(3) {
    top: 8px;
    left: 56px;
    animation-delay: -0.8s;
- }
- .lds-grid div:nth-child(4) {
+}
+
+.lds-grid div:nth-child(4) {
    top: 32px;
    left: 8px;
    animation-delay: -0.4s;
- }
- .lds-grid div:nth-child(5) {
+}
+
+.lds-grid div:nth-child(5) {
    top: 32px;
    left: 32px;
    animation-delay: -0.8s;
- }
- .lds-grid div:nth-child(6) {
+}
+
+.lds-grid div:nth-child(6) {
    top: 32px;
    left: 56px;
    animation-delay: -1.2s;
- }
- .lds-grid div:nth-child(7) {
+}
+
+.lds-grid div:nth-child(7) {
    top: 56px;
    left: 8px;
    animation-delay: -0.8s;
- }
- .lds-grid div:nth-child(8) {
+}
+
+.lds-grid div:nth-child(8) {
    top: 56px;
    left: 32px;
    animation-delay: -1.2s;
- }
- .lds-grid div:nth-child(9) {
+}
+
+.lds-grid div:nth-child(9) {
    top: 56px;
    left: 56px;
    animation-delay: -1.6s;
- }
- @keyframes lds-grid {
-   0%, 100% {
-     opacity: 1;
-   }
-   50% {
-     opacity: 0.5;
-   }
- }
- 
+}
 
-html, body {
+@keyframes lds-grid {
+
+   0%,
+   100% {
+      opacity: 1;
+   }
+
+   50% {
+      opacity: 0.5;
+   }
+}
+
+
+html,
+body {
    overflow: hidden;
 }
 
@@ -215,6 +231,7 @@ a.nav-link.text-white:hover {
 
 .about {
    font-family: 'Poppins', sans-serif;
+
 }
 
 .about .title {
@@ -231,18 +248,7 @@ a.nav-link.text-white:hover {
    object-fit: cover;
 }
 
-/* .about .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: black;
-    transform: translateX(-50);
 
-}
- */
 .about .about-content {
    display: flex;
    flex-wrap: wrap;
@@ -252,11 +258,47 @@ a.nav-link.text-white:hover {
 
 
 
+
+
 .about .container .right-col .text {
    font-size: 2vw;
    font-weight: 600;
    margin-bottom: 10px;
 }
+
+.about .container .row .resume {
+   margin: 0 auto;
+   margin-top: 30px;
+}
+
+.about .container .resume a {
+   font-size: 22px;
+   background-color: rgb(114, 114, 114);
+   padding: 7px 10px;
+   font-family: 'Ubuntu', sans-serif;
+   text-decoration: none;
+   color: whitesmoke;
+   box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
+   transition: transform 0.2s ease-in-out;
+   display: inline-block;
+   border-radius: 5px;
+
+
+}
+
+.about .container .resume a i {
+   color: #444444;
+   padding-right: 8px;
+}
+
+.about .container .resume a:hover {
+   display: inline-block;
+   transform: translateY(-1.9px);
+   background-color: rgb(85, 85, 85);
+   transition: all 0.2s ease-in-out;
+
+}
+
 
 .about .container .left-col {
    width: 45%;
@@ -694,12 +736,44 @@ a.nav-link.text-white:hover {
       font-size: 5vw;
    }
 
+   .about {
+      padding-bottom: 60px;
+   }
+
    .about .container .text {
       font-size: 5vw;
    }
 
    .about .container .right-col .text {
       font-size: 4vw;
+   }
+
+   .about .container .row .resume {
+      margin: 0 auto;
+      margin-top: 10px;
+   }
+
+   .about .container .resume a {
+      font-size: 22px;
+      background-color: rgb(114, 114, 114);
+      padding: 6px 9px;
+      font-family: 'Ubuntu', sans-serif;
+      text-decoration: none;
+      color: whitesmoke;
+      box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.4);
+      transition: transform 0.2s ease-in-out;
+      display: inline-block;
+      border-radius: 5px;
+
+
+   }
+
+   .about .container .resume a:hover {
+      display: inline-block;
+      transform: translateY(-1.9px);
+      background-color: rgb(85, 85, 85);
+      transition: all 0.2s ease-in-out;
+
    }
 
    .contact .get-in-touch {

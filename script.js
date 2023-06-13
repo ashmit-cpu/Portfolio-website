@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.scrollTo(0, 0);
 
 
-  // Enable scrolling after 4 seconds
+  
   setTimeout(function () {
       document.documentElement.style.overflow = 'auto';
   }, 1500);
