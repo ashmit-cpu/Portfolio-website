@@ -172,6 +172,10 @@ a.nav-link.text-white:hover {
 
 }
 
+span.navbar-toggler-icon{
+   color: gainsboro !important;
+}
+
 /* particles styling */
 
 #particles-js{
@@ -850,5 +854,10 @@ a.nav-link.text-white:hover {
       display: inline-block;
       transform: translateY(-2.4px);
       background-color: rgb(85, 85, 85);
+   }
+
+
+   #particles-js{
+      display: none;
    }
 }
