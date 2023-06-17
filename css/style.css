@@ -357,6 +357,8 @@ span.navbar-toggler-icon{
    font-size: 15px;
    border-radius: 7px;
    transition: all 0.5s ease-in;
+   border: none;
+   outline: none;
 
 
 }
@@ -386,7 +388,8 @@ span.navbar-toggler-icon{
 
 
 .passion .row .card:hover {
-   background-color: crimson;
+   background: rgb(107,10,29);
+   background: linear-gradient(90deg, rgba(107,10,29,1) 6%, rgba(235,21,64,1) 100%, rgba(247,22,67,1) 100%);
    cursor: pointer;
    transition: all 0.5s ease;
 
