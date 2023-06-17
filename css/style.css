@@ -172,6 +172,16 @@ a.nav-link.text-white:hover {
 
 }
 
+/* particles styling */
+
+#particles-js{
+   position: absolute;
+   top: 10px;
+   width: 100%;
+   height: 117vmin;
+}
+
+
 
 
 /* home section styling */
@@ -181,7 +191,6 @@ a.nav-link.text-white:hover {
    display: cover;
    background-size: cover;
    height: 120vmin;
-
    color: #fff;
    font-family: 'Ubuntu', sans-serif;
    background-repeat: no-repeat;
