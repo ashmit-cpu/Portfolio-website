@@ -578,7 +578,7 @@ span.navbar-toggler-icon {
 
 /* giving hover effect on card title */
 .projects .row .card:hover .card-title {
-   color: crimson;
+   color: rgb(247, 32, 75);
    transition: all 0.5s;
 }
 
