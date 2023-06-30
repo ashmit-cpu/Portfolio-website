@@ -1,9 +1,15 @@
 
 $(window).scroll(function () {
   if ($(window).scrollTop() >= 80) {
-    $('.header-bg').css('background', '#780B21');
+    $('.header-bg').css({'background': '#780b21d9',
+    'backdrop-filter': 'saturate(180%) blur(10px)'
+  });
+    
+
   } else {
-    $('.header-bg').css('background', 'transparent');
+    $('.header-bg').css({'background': 'transparent',
+    'backdrop-filter': 'none'
+  });
   }
 });
 
