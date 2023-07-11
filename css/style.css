@@ -210,6 +210,8 @@ span.navbar-toggler-icon {
    background-repeat: no-repeat;
    background-position: center;
 
+
+
 }
 
 .home .max-width {
@@ -357,6 +359,8 @@ span.navbar-toggler-icon {
    background-color: #111;
    padding-bottom: 120px;
 }
+
+
 
 
 
@@ -552,8 +556,9 @@ span.navbar-toggler-icon {
 
 .projects .row {
    display: flex;
-   justify-content: space-around;
+   justify-content: space-between;
    gap: 20px;
+   flex-wrap: wrap;
 }
 
 .projects .row .card {
@@ -732,8 +737,34 @@ span.navbar-toggler-icon {
 
 }
 
+@media all and (max-width:992px) {
+   .passion .row .card {
+      height: 97%;
+      font-size: 12px;
 
 
+
+   }
+}
+
+@media all and (max-width: 768px) {
+
+   .projects .row {
+      justify-content: center;
+   }
+
+   .passion .row #icon {
+      text-align: center;
+      color: red;
+      font-size: 48px;
+      padding-top: 7%;
+      padding-bottom: 3%;
+      transition: all 0.3s ease-in;
+
+   }
+
+
+}
 
 
 
