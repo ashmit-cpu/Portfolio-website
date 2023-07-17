@@ -737,6 +737,11 @@ span.navbar-toggler-icon {
 
 }
 
+
+.particles-js-canvas-el{
+   opacity: 0.5;
+}
+
 @media all and (max-width:992px) {
    .passion .row .card {
       height: 97%;
