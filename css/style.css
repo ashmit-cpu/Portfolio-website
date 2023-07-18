@@ -159,7 +159,7 @@ body {
 .header-bg {
    position: fixed;
    width: 100%;
-   z-index: 99;
+   z-index: 999;
    font-family: 'Ubuntu', sans-serif;
    transition: all 0.6s ease;
 
@@ -195,6 +195,9 @@ span.navbar-toggler-icon {
    height: 117vmin;
 }
 
+.particles-js-canvas-el {
+   opacity: 0.5;
+}
 
 
 
@@ -245,6 +248,24 @@ span.navbar-toggler-icon {
 
 }
 
+.wave {
+   aspect-ratio: 930/300;
+   width: 100%;
+   position: absolute;
+   z-index: 99;
+   top: 118vmin;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+
+}
+
+.layer {
+   background-image: url('../img/layered-waves-haikei.svg');
+
+}
+
 
 /* about section styling */
 
@@ -252,7 +273,12 @@ span.navbar-toggler-icon {
 .about {
    padding: 100px 0;
    background-color: gainsboro;
+   position: relative;
 }
+
+
+
+
 
 .about {
    font-family: 'Poppins', sans-serif;
@@ -263,15 +289,35 @@ span.navbar-toggler-icon {
    font-family: 'Ubuntu', sans-serif;
    text-align: center;
    font-size: 40px;
+   z-index: 99;
+   position: relative;
+   color: gainsboro;
+   text-shadow: 1px 3px 13px rgba(0, 0, 0, 0.6);
 
 
 }
 
 .about .container .left-col img {
    width: 50%;
+   z-index: 99;
+   position: relative;
    height: auto;
    object-fit: cover;
+   transition: all 0.2s ease-in;
+   filter: grayscale(0%) drop-shadow(2px 3px 8px #000000);
+
+
 }
+
+.about .container .left-col img:hover {
+   transform: translateY(-2px);
+   cursor: pointer;
+   filter: grayscale(90%) drop-shadow(2px 3px 8px #000000);
+   -webkit-filter: grayscale(90%) drop-shadow(2px 3px 8px #000000);
+   -moz-filter: grayscale(90%) drop-shadow(2px 3px 8px #000000);
+
+}
+
 
 
 .about .about-content {
@@ -327,12 +373,16 @@ span.navbar-toggler-icon {
 
 .about .container .left-col {
    width: 45%;
+   z-index: 99;
+
 }
 
 
 .about .container .right-col {
    width: 55%;
    padding-top: 7%;
+   z-index: 99;
+
 
 
 }
@@ -358,6 +408,31 @@ span.navbar-toggler-icon {
 .passion {
    background-color: #111;
    padding-bottom: 120px;
+   position: relative;
+}
+
+.passion .about-wave {
+   position: absolute;
+   z-index: 99;
+   top: 0;
+   left: 0;
+   width: 100%;
+   aspect-ratio: 900/300;
+   overflow: hidden;
+   line-height: 0;
+}
+
+
+.passion .about-wave svg {
+   position: relative;
+   display: block;
+   width: calc(142% + 1.3px);
+   height: 106px;
+
+}
+
+.passion .about-wave .shape-fill {
+   fill: gainsboro;
 }
 
 
@@ -373,6 +448,7 @@ span.navbar-toggler-icon {
    transition: all 0.5s ease-in;
    border: none;
    outline: none;
+   z-index: 99;
 
 
 }
@@ -433,6 +509,32 @@ span.navbar-toggler-icon {
    background-color: gainsboro;
    padding-top: 80px;
    padding-bottom: 80px;
+   position: relative;
+
+}
+
+.skills .skills-wave {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   aspect-ratio: 900/300;
+   overflow: hidden;
+   line-height: 0;
+}
+
+
+.skills .skills-wave svg {
+   position: relative;
+   display: block;
+   width: calc(142% + 1.3px);
+   height: 106px;
+
+
+}
+
+.skills .skills-wave .shape-fill {
+   fill: #111;
 }
 
 .skills h2 {
@@ -447,11 +549,15 @@ span.navbar-toggler-icon {
 
 .skills .row {
    padding-bottom: 50px;
+   z-index: 99;
+   position: relative;
+
 }
 
 .skills .row .skill-icon img {
    width: 80px;
    height: auto;
+
 
 }
 
@@ -539,9 +645,33 @@ span.navbar-toggler-icon {
 
 .projects {
    background-color: #111;
-   padding-bottom: 100px;
+   padding-bottom: 60px;
    padding-top: 36px;
    color: white;
+   position: relative;
+}
+
+.projects .projects-wave {
+   position: absolute;
+   top: -2px;
+   left: 0;
+   width: 100%;
+   aspect-ratio: 900/300;
+   overflow: hidden;
+   line-height: 0;
+}
+
+.projects .projects-wave svg {
+   position: relative;
+   display: block;
+   width: calc(142% + 1.3px);
+   height: 106px;
+
+
+}
+
+.projects .projects-wave .shape-fill {
+   fill:gainsboro;
 }
 
 .projects .container {
@@ -651,6 +781,7 @@ span.navbar-toggler-icon {
    padding-top: 90px;
    display: flex;
    justify-content: center;
+   z-index: 99;
 }
 
 .projects .github-btn a {
@@ -681,7 +812,29 @@ span.navbar-toggler-icon {
 }
 
 
+.contact{
+   position: relative;
+}
 
+.contact .contact-wave {
+   position: absolute;
+   top: -2px;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+}
+
+.contact .contact-wave svg {
+   position: relative;
+    display: block;
+    width: calc(180% + 1.3px);
+    height: 92px;
+}
+
+.contact .contact-wave .shape-fill {
+   fill: #111111;
+}
 
 
 .contact .get-in-touch {
@@ -738,9 +891,7 @@ span.navbar-toggler-icon {
 }
 
 
-.particles-js-canvas-el{
-   opacity: 0.5;
-}
+
 
 @media all and (max-width:992px) {
    .passion .row .card {
@@ -754,6 +905,11 @@ span.navbar-toggler-icon {
 
 @media all and (max-width: 768px) {
 
+   .about .title {
+      color: #111;
+      text-shadow: 1px 3px 13px rgba(255, 255, 255, 0.6);
+   }
+
    .projects .row {
       justify-content: center;
    }
@@ -766,6 +922,20 @@ span.navbar-toggler-icon {
       padding-bottom: 3%;
       transition: all 0.3s ease-in;
 
+   }
+
+   .passion .about-wave svg,
+   .skills .skills-wave svg,
+   .projects .projects-wave svg {
+      position: relative;
+      display: block;
+      width: calc(142% + 1.3px);
+      height: 30px;
+
+   }
+   .contact .contact-wave svg{
+      width: calc(180% + 1.3px);
+    height: 50px;
    }
 
 
