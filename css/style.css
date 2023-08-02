@@ -684,7 +684,6 @@ span.navbar-toggler-icon {
    outline: none;
    z-index: 99;
    overflow: hidden;
-   pointer-events: none;
 
 
 }
@@ -950,8 +949,6 @@ span.navbar-toggler-icon {
    cursor: pointer;
    transition: all 0.5s;
    overflow: hidden;
-   pointer-events: none;
-
 
 }
 
