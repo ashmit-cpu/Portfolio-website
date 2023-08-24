@@ -29,6 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+
 window.addEventListener("load",function(){
   setTimeout(function () {
     const preloader = document.getElementById("preloader");
